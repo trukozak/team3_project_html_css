@@ -1,0 +1,78 @@
+.footer {
+  padding-top: 113px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+
+  background: #fff5f6;
+  &__title {
+    max-width: 232px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    color: #ffa5ba;
+
+    margin-bottom: 17px;
+
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    max-width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin-bottom: 44px;
+    color: #d41443;
+
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  &__right-side-thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__decoration-line {
+    display: block;
+    border-top: 2px solid #e1e1e1;
+    max-width: 320px;
+  }
+  &__tel-number {
+    max-width: 270px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 44px;
+
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.83;
+  }
+  &__tel-number_disagn {
+    color: #d41443;
+  }
+  // &__decoration-line {
+  //   max-width: 320px;
+  // }
+  &__copyright {
+    max-width: 150px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+
+    color: #907e82;
+
+    text-align: center;
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+  }
+}
