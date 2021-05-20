@@ -1,0 +1,17 @@
+.open-menu {
+  &__button {
+    background-color: inherit;
+
+    border: 0;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 12px;
+  }
+}
+
+.menu {
+  max-width: 254px;
+  background-color: var(--tablet-menu-color);
+}
