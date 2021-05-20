@@ -1,0 +1,14 @@
+.button {
+  display: flex;
+  border: 0;
+
+  &--dark-theme {
+    background-color: var(--accent-color);
+    color: var(--white);
+  }
+
+  &--light-theme {
+    background-color: var(--white);
+    color: var(--accent-color);
+  }
+}

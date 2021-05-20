@@ -1,0 +1,22 @@
+.header {
+  position: relative;
+  padding: 6px 20px;
+
+  background-color: var(--products-color-pink);
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    &__list--hidden {
+      display: none;
+    }
+
+    &__button--hidden {
+      display: none;
+    }
+  }
+}

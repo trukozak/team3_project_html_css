@@ -1,25 +1,58 @@
 <header class="header">
   <div class="container">
     <nav class="site-nav">
-      <a href="" class="logo">
+      <a href="" class="logo link">
         <img src="./images/hero-header/hero-logo.png" alt="" width="199" height="50" />
       </a>
-      <ul class="site-nav__list">
-        <li class="site-nav__item site-nav--current"><a href="">Home</a></li>
-        <li class="site-nav__item"><a href="">About us</a></li>
-        <li class="site-nav__item"><a href="">How it’s made?</a></li>
-        <li class="site-nav__item"><a href="">Our products</a></li>
-        <li class="site-nav__item"><a href="">Contact</a></li>
+      <ul class="site-nav__list site-nav__list--hidden list">
+        <li class="site-nav__item site-nav--current"><a class="link" href="">Home</a></li>
+        <li class="site-nav__item"><a class="link" href="">About us</a></li>
+        <li class="site-nav__item"><a class="link" href="">How it’s made?</a></li>
+        <li class="site-nav__item"><a class="link" href="">Our products</a></li>
+        <li class="site-nav__item"><a class="link" href="">Contact</a></li>
       </ul>
-      <div class="burger-menu">
-        <button class="burger-menu__button">
-          <svg class="burger-menu__icon">
+      <div class="open-menu">
+        <button class="open-menu__button" type="button" data-menu-open>
+          <svg class="open-menu__icon">
             <use href="./images/sprite.svg#burger-icon"></use>
           </svg>
         </button>
       </div>
+      <div class="backdrop is-hidden backdrop--hidden" data-menu>
+        <div class="menu">
+          <button class="menu__close-button" type="button" data-menu-close>
+            <svg class="menu__close-icon">
+              <use href="./images/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+          <button class="button button--light-theme menu__button" type="button">
+            Buy now
+            <svg class="button__icon">
+              <use href="./images/sprite.svg#btn-icon"></use>
+            </svg>
+          </button>
+          <nav class="site-nav site-nav--display">
+            <ul class="site-nav__list list">
+              <li class="site-nav__item site-nav__item--current">
+                <a class="link" href="">Home</a>
+              </li>
+              <li class="site-nav__item"><a class="link" href="">About us</a></li>
+              <li class="site-nav__item"><a class="link" href="">How it’s made?</a></li>
+              <li class="site-nav__item"><a class="link" href="">Our products</a></li>
+              <li class="site-nav__item"><a class="link" href="">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </nav>
-    <button class="button button--light-theme site-nav__button" type="button">Buy now</button>
+    <button
+      class="button button--light-theme site-nav__button site-nav__button--hidden"
+      type="button"
+    >
+      Buy now
+      <svg class="button__icon">
+        <use href="./images/sprite.svg#btn-icon"></use>
+      </svg>
+    </button>
   </div>
-  <div></div>
 </header>
