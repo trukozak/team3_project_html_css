@@ -1,10 +1,20 @@
-.its-made {
-    background: #FFF5F6;
-}
-
 .its-made__sub-box {
-    padding-right: 49px;
-    padding-left: 51px;
+    @media screen and (max-width: 767px){
+        padding-right: 49px;
+        padding-left: 51px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 50px;
+        padding-left: 17px;
+        padding-right: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 51px;
+        padding-left: 74px;
+        padding-right: 142px;
+    }
 }
 
 .its-made__title {
@@ -17,6 +27,16 @@
     text-transform: uppercase;
     color: var(--title-text-color);
     margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 30px;
+        line-height: 1.2;
+    }
 }
 
 .its-made__subtitle {
@@ -30,13 +50,34 @@
     text-transform: uppercase;
     color: var(--accent-color);
     margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.14;
+        margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 58px;
+        line-height: 1.13;
+    }
 }
 
 .its-made__box-img{
     margin-bottom: 46px;
+    width: 100%;
+    max-width: 280px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 340px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 516px;
+    }
 }
 
-.its-made__box__text {
+.its-made__text {
     font-family: DM Sans;
     font-style: normal;
     font-weight: 500;
@@ -44,9 +85,19 @@
     line-height: 1.58;
     color: var(--black);
     margin-bottom: 46px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.78;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.75;
+    }
 }
 
-.its-made__box__text2 {
+.its-made__text2 {
     font-family: DM Sans;
     font-style: normal;
     font-weight: 500;
@@ -54,31 +105,25 @@
     line-height: 1.58;
     color: var(--grey);
     margin-bottom: 46px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.78;
+    }
 }
 
-.descrp__img {
-    width: 33px;
-    height: 50px;
-    margin-bottom: 16px;
+.its-made {
+    padding-top: 139px;
 }
 
-.descrp__title{
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 1.13;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--accent-color);
-    margin-bottom: 16px;
+.its-made__box {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 85px;
+    }
 }
 
-.descrp__text {
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 1.666;
-    color: var(--black);
-}
+
