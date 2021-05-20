@@ -11,4 +11,9 @@
     background-color: var(--white);
     color: var(--accent-color);
   }
+
+  &__arrow {
+    width: 5px;
+    height: 10px;
+  }
 }
