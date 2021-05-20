@@ -2,8 +2,7 @@
   @media screen and (min-width: 768px) and (max-width: 1279px) {
   }
   padding-top: 113px;
-  // padding-left: 20px;
-  // padding-right: 20px;
+
   &__own-thumb {
     @media screen and (min-width: 768px) {
       display: flex;
@@ -11,20 +10,19 @@
     }
   }
   background: var(--secondary-background-color);
+  &__title,
+  &__subtitle {
+    font-family: Titan One;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
   &__title {
     max-width: 232px;
-    padding-left: 20px;
-    padding-right: 20px;
-
     color: var(--title-text-color);
 
     margin-bottom: 17px;
-
-    font-family: Titan One;
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.16;
-    text-transform: uppercase;
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       max-width: 370px;
@@ -40,18 +38,12 @@
   }
   &__subtitle {
     max-width: 200px;
-    padding-left: 20px;
-    padding-right: 20px;
-
     margin-bottom: 44px;
     color: var(--accent-color);
 
-    font-family: Titan One;
-    font-weight: 400;
     font-size: 34px;
     line-height: 39px;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       max-width: 340px;
@@ -86,6 +78,7 @@
     font-weight: 700;
     font-size: 11px;
     line-height: 1.83;
+
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       max-width: 340px;
       font-size: 14px;
@@ -100,9 +93,7 @@
   &__tel-number_disagn {
     color: var(--accent-color);
   }
-  // &__decoration-line {
-  //   max-width: 320px;
-  // }
+
   &__copyright {
     max-width: 150px;
     margin: 0 auto;
