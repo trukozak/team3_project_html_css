@@ -14,4 +14,24 @@
 .menu {
   max-width: 254px;
   background-color: var(--tablet-menu-color);
+
+  // &__container {
+  // position: relative;
+  // }
+
+  &__close-button {
+    // position: absolute;
+    // top: 24px;
+    // right: 28px;
+    width: 15px;
+    height: 15px;
+
+    background-color: inherit;
+    border: 0;
+  }
+
+  &__close-icon {
+    width: 14px;
+    height: 14px;
+  }
 }

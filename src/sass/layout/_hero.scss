@@ -1,9 +1,22 @@
 .hero {
+  position: relative;
   padding-top: 130px;
+  min-height: 440px;
+
   background-color: var(--products-color-pink);
 
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__title-container {
+    position: absolute;
     max-width: 220px;
+
+    z-index: 8;
   }
 
   &__title {
@@ -34,12 +47,45 @@
   &--button {
     padding: 10px 15px;
 
-    font-family: DM Sans;
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.3px;
 
     border-radius: 30px;
+
+    // & + & {
+    //   margin-left: 8px;
+    // }
+  }
+
+  &__ice-cream-container {
+    position: absolute;
+    top: 20px;
+    right: -95px;
+  }
+
+  &__ice-cream-background {
+    width: 346px;
+    height: 344px;
+
+    background-color: var(--title-text-color);
+
+    border-radius: 50%;
+  }
+
+  &__ice-cream {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 10px);
+  }
+
+  @media screen and (max-width: 767px) {
+    &__ad,
+    &__text,
+    &__girl {
+      display: none;
+    }
   }
 }

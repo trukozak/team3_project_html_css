@@ -1,70 +1,79 @@
 <section class="hero">
   <div class="container">
-    <div class="hero__title-container">
-      <h1 class="hero__title">
-        ice cream made with <span class="hero__title--color">passion</span>
-      </h1>
-      <div class="hero__button-container">
-        <button class="button button--dark-theme hero--button" type="button">Products</button>
-        <button class="button button--light-theme hero--button" type="button">
-          How it’s made?
-        </button>
+    <div class="hero__container">
+      <div class="hero__title-container">
+        <h1 class="hero__title">
+          ice cream made with <span class="hero__title--color">passion</span>
+        </h1>
+        <div class="hero__button-container">
+          <button class="button button--dark-theme hero--button" type="button">Products</button>
+          <button class="button button--light-theme hero--button" type="button">
+            How it’s made?
+          </button>
+        </div>
+      </div>
+      <div class="hero__ad">
+        <div>
+          <span class="hero__cafes"><span class="hero__number">16</span> cafes</span>
+        </div>
+        <div>
+          <span class="hero__trucks"><span class="hero__number">23</span> food trucks</span>
+        </div>
       </div>
     </div>
-    <picture>
-      <source
-        srcset="
-          ./images/hero-header/hero-milk-desktop.png    1x,
-          ./images/hero-header/hero-milk-desktop@2x.png 2x
-        "
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="
-          ./images/hero-header/hero-milk-tablet.png    1x,
-          ./images/hero-header/hero-milk-tablet@2x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <img src="./images/hero-header/hero-milk-tablet.png" alt="" />
-    </picture>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatem ducimus corporis
-        praesentium molestias pariatur?
-      </p>
-      <button></button>
+    <div class="hero__text">
+      <picture>
+        <source
+          srcset="
+            ./images/hero-header/hero-milk-desktop.png    1x,
+            ./images/hero-header/hero-milk-desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero-header/hero-milk-tablet.png    1x,
+            ./images/hero-header/hero-milk-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img class="hero__milk" src="./images/hero-header/hero-milk-tablet.png" alt="" />
+      </picture>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatem ducimus corporis
+          praesentium molestias pariatur?
+        </p>
+        <button></button>
+      </div>
     </div>
-    <div>
-      <span>16 cafes</span>
+    <div class="hero__ice-cream-container">
+      <div class="hero__ice-cream-background"></div>
+      <picture>
+        <source
+          srcset="
+            ./images/hero-header/hero-ice-cream-desktop.png    1x,
+            ./images/hero-header/hero-ice-cream-desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero-header/hero-ice-cream-tablet.png     1x,
+            ./images/hero-header/hero-ice-cream-tablet.@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/hero-header/hero-ice-cream-mobile.png    1x,
+            ./images/hero-header/hero-ice-cream-mobile@2x.png 2x
+          "
+          media="(min-width: 280px)"
+        />
+        <img class="hero__ice-cream" src="./images/hero-header/hero-ice-cream-mobile.png" alt="" />
+      </picture>
     </div>
-    <div>
-      <span>23 food trucks</span>
-    </div>
-    <picture>
-      <source
-        srcset="
-          ./images/hero-header/hero-ice-cream-desktop.png    1x,
-          ./images/hero-header/hero-ice-cream-desktop@2x.png 2x
-        "
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="
-          ./images/hero-header/hero-ice-cream-tablet.png     1x,
-          ./images/hero-header/hero-ice-cream-tablet.@2x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          ./images/hero-header/hero-ice-cream-mobile.png    1x,
-          ./images/hero-header/hero-ice-cream-mobile@2x.png 2x
-        "
-        media="(min-width: 280px)"
-      />
-      <img src="./images/hero-header/hero-ice-cream-mobile.png" alt="" />
-    </picture>
     <picture>
       <source
         srcset="
@@ -80,7 +89,7 @@
         "
         media="(min-width: 768px)"
       />
-      <img src="./images/hero-header/hero-girl-tablet.png" alt="" />
+      <img class="hero__girl" src="./images/hero-header/hero-girl-tablet.png" alt="" />
     </picture>
   </div>
 </section>
