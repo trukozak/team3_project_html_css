@@ -1,5 +1,4 @@
 .button {
-  display: flex;
   border: 0;
 
   &--dark-theme {
@@ -15,5 +14,6 @@
   &__arrow {
     width: 5px;
     height: 10px;
+    margin-left: 30px;
   }
 }

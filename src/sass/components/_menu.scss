@@ -1,4 +1,7 @@
 .open-menu {
+  display: flex;
+  align-items: center;
+
   &__button {
     background-color: inherit;
 
@@ -12,19 +15,19 @@
 }
 
 .menu {
-  max-width: 254px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 60px 20px;
+  width: 254px;
+  height: 498px;
   background-color: var(--tablet-menu-color);
 
-  // &__container {
-  // position: relative;
-  // }
-
   &__close-button {
-    // position: absolute;
-    // top: 24px;
-    // right: 28px;
-    width: 15px;
-    height: 15px;
+    position: absolute;
+    top: 24px;
+    right: 28px;
+    display: flex;
 
     background-color: inherit;
     border: 0;
@@ -33,5 +36,22 @@
   &__close-icon {
     width: 14px;
     height: 14px;
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__buy-now {
+    width: 210px;
+    height: 44px;
+    max-width: 210px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 1020px;
   }
 }
