@@ -1,17 +1,23 @@
 @import './utils/variables';
+@import './utils/visually-hidden';
 
 @import './base/common';
 @import './base/container';
 @import './base/section';
 
-@import './layout/button';
+@import './components/backdrop';
+@import './components/button';
+@import './components/menu';
+@import './components/social-list';
+@import './components/title';
+
 @import './layout/header';
-@import './layout/backdrop';
-@import './layout/menu';
 @import './layout/hero';
 @import './layout/products';
 @import './layout/its-made';
+@import './layout/advantages';
+@import './layout/gallery';
 @import './layout/customer-reviews';
 @import './layout/operating-mode';
+@import './layout/contacts';
 @import './layout/footer';
-@import './layout/social-list';
