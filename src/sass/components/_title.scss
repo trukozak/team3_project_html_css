@@ -1,6 +1,4 @@
 .title {
-  margin-bottom: 15px;
-  
   font-family: Titan One;
   font-weight: 400;
   font-size: 34px;
@@ -9,4 +7,15 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+  }
 }
