@@ -12,7 +12,7 @@
   }
 
   &__content-container {
-    width: calc(100% - 30px);
+    width: calc(100% - 40px);
     position: absolute;
     z-index: 3;
   }
@@ -96,7 +96,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    height: 396px;
+    height: 418px;
 
     &__ad-container {
       position: relative;
@@ -135,16 +135,6 @@
       line-height: 1.25;
     }
 
-    &__ice-cream-container {
-      top: -52px;
-      right: 114px;
-    }
-
-    &__ice-cream-background {
-      width: 324px;
-      height: 322px;
-    }
-
     &__title-button {
       margin-bottom: 20px;
     }
@@ -158,15 +148,77 @@
       display: flex;
     }
 
-    &__describe-button {
-      width: 120px;
+    &__describe-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 130px;
     }
 
     &__describe {
+      margin-bottom: 12px;
       font-style: normal;
       font-weight: 400;
       font-size: 8px;
       line-height: 1.5;
+    }
+
+    &__describe-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      padding: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: none;
+      background-color: var(--white);
+
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: var(--accent-color);
+      }
+    }
+
+    &__describe-icon {
+      fill: var(--accent-color);
+
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      .describe-button:hover &,
+      .describe-button:focus & {
+        fill: var(--white);
+      }
+    }
+
+    &__girl-container {
+      width: 168px;
+      position: relative;
+    }
+
+    &__girl {
+      position: absolute;
+      bottom: -19px;
+    }
+
+    &__ice-cream-container {
+      top: -52px;
+      right: 114px;
+    }
+
+    &__ice-cream-background {
+      width: 324px;
+      height: 322px;
+    }
+
+    &__ice-cream {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(50%, 32px);
     }
   }
 
