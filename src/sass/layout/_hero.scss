@@ -1,25 +1,33 @@
 .hero {
   position: relative;
-  padding-top: 130px;
-  min-height: 440px;
+  padding-top: 192px;
+  height: 498px;
 
   background-color: var(--products-color-pink);
 
   overflow: hidden;
 
-  &__container {
+  &--container-position {
+    position: relative;
+  }
+
+  &__content-container {
+    width: calc(100% - 30px);
+    position: absolute;
+    z-index: 3;
+  }
+
+  &__container-first {
     display: flex;
     justify-content: space-between;
   }
 
-  &__title-container {
-    position: absolute;
-    max-width: 220px;
-
-    z-index: 8;
+  &__title-button {
+    width: 230px;
   }
 
   &__title {
+    display: inline-block;
     margin-bottom: 25px;
 
     font-family: Titan One;
@@ -27,7 +35,6 @@
     font-weight: 400;
     font-size: 26px;
     line-height: 1.15;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: #ffffff;
@@ -54,14 +61,14 @@
 
     border-radius: 30px;
 
-    // & + & {
-    //   margin-left: 8px;
-    // }
+    & + & {
+      margin-left: 8px;
+    }
   }
 
   &__ice-cream-container {
     position: absolute;
-    top: 20px;
+    top: -110px;
     right: -95px;
   }
 
@@ -83,9 +90,97 @@
 
   @media screen and (max-width: 767px) {
     &__ad,
-    &__text,
-    &__girl {
+    &__container-second {
       display: none;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    height: 396px;
+
+    &__ad-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      & + & {
+        margin-top: 13px;
+      }
+    }
+
+    &__ad-circle {
+      position: absolute;
+      top: -3px;
+      right: 9px;
+      width: 16px;
+      height: 16px;
+      background-color: var(--white);
+      border-radius: 50%;
+    }
+
+    &__number {
+      color: var(--accent-color);
+      font-family: Titan One;
+      font-style: normal;
+      font-size: 28px;
+      line-height: 1.14;
+      text-transform: uppercase;
+    }
+
+    &__cafes {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.25;
+    }
+
+    &__ice-cream-container {
+      top: -52px;
+      right: 108px;
+    }
+
+    &__ice-cream-background {
+      width: 324px;
+      height: 322px;
+    }
+
+    &__title-button {
+      margin-bottom: 20px;
+    }
+
+    &__container-second {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__milk-describe {
+      display: flex;
+    }
+
+    &__describe-button {
+      width: 120px;
+    }
+
+    &__describe {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.5;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 102px;
+  }
+}
+
+.products__button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
 }
