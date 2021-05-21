@@ -1,8 +1,8 @@
 .social-list {
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
-  justify-content: end;
+  &__link {
+    cursor: pointer;
+  }
   &__items {
     display: flex;
     margin-bottom: 46px;
@@ -13,5 +13,12 @@
   &__icon {
     width: 34px;
     height: 34px;
+    fill: #fea5bb;
+  }
+  &__icon:hover {
+    fill: var(--accent-color);
+  }
+  &__link:focus &__icon {
+    fill: var(--accent-color);
   }
 }
