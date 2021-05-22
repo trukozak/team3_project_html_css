@@ -1,6 +1,6 @@
 # parcel-project-template
 
-## Зависимости
+# Зависимости
 
 На компьютере должена быть установлена LTS-версия [Node.js](https://nodejs.org/en/).
 
