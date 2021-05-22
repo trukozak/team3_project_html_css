@@ -9,18 +9,18 @@
     padding-top: 6px;
     padding-bottom: 6px;
   }
+
+  @media screen and (min-width: 768px) {
+    &__container {
+      padding: 0;
+    }
+  }
 }
 
 .site-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  &__item {
-    & + & {
-      margin-top: 23px;
-    }
-  }
 
   &__link {
     display: inline-block;
@@ -50,6 +50,12 @@
     &__list--hidden {
       display: none;
     }
+
+    &__item {
+      & + & {
+        margin-top: 23px;
+      }
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -73,6 +79,26 @@
       width: 160px;
       margin-left: 30px;
       margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 35px;
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      & + & {
+        margin-left: 35px;
+      }
+    }
+
+    &__link {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.3;
     }
   }
 }

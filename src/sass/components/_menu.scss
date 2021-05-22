@@ -20,6 +20,12 @@
       color: var(--white);
     }
   }
+
+  @media screen and (min-width: 1280px) {
+    &__button {
+      display: none;
+    }
+  }
 }
 
 .menu {
