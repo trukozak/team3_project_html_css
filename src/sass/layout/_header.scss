@@ -81,8 +81,11 @@
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: flex;
-    padding-top: 38px;
     justify-content: space-between;
+
+    &--padding {
+      padding-top: 38px;
+    }
   }
 
   &__button {
