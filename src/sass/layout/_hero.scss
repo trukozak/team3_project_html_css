@@ -12,9 +12,10 @@
   }
 
   &__content-container {
-    width: calc(100% - 40px);
+    width: 100%;
     position: absolute;
     z-index: 3;
+    left: 0;
   }
 
   &__container-first {
@@ -104,8 +105,10 @@
 
     &__ad-container {
       position: relative;
+
       display: flex;
       flex-direction: column;
+      margin-right: 8px;
       text-align: right;
 
       & + & {
@@ -193,8 +196,8 @@
 
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-      .describe-button:hover &,
-      .describe-button:focus & {
+      .hero__describe-button:hover &,
+      .hero__describe-button:focus & {
         fill: var(--white);
       }
     }
@@ -274,6 +277,8 @@
     }
 
     &__ad-container {
+      margin-right: 16px;
+
       & + & {
         margin-top: 15px;
       }
