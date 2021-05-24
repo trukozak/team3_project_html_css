@@ -13,11 +13,38 @@
     background-color: #000;
   }
 
+  &__title {
+    color: var(--white);
+    font-family: Titan One, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.15px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__title--dark {
+    color: var(--accent-color);
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
 
+    &__title {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
     &--left {
       background-color: #ffb8ca;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &__title {
+      font-size: 38px;
+      line-height: 1.15px;
     }
   }
 }
