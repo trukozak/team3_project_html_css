@@ -15,7 +15,7 @@
     font-size: 36px;
     line-height: 1.13;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     color: var(--accent-color);
     margin-bottom: 16px;
 
@@ -84,13 +84,13 @@
 .advantages_list {  
 
     @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 180px) / 3);    
+           
         margin-left: 36px;             
         box-sizing: border-box;
         }
 
     @media screen and (min-width: 1280px) {
-        flex-basis: calc((100% - 60px) / 3);    
+           
         margin-left: 30px;             
         box-sizing: border-box;
         }
