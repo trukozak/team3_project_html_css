@@ -1,6 +1,8 @@
 .gallery__img {
   width: 100%;
   max-width: 364px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media screen and (min-width: 768px) {
     max-width: 786px;
@@ -12,5 +14,11 @@
 }
 
 .line-gradient {
-  background: linear-gradient(var(--secondary-background-color) 0% 40%, var(--white) 40% 100%);
+  background: 
+  linear-gradient(
+    var(--secondary-background-color) 20%, 
+    var(--white) 70%);  
+  // linear-gradient
+  // (var(--secondary-background-color) 0% 40%, 
+  // var(--white) 40% 100%);
 }
