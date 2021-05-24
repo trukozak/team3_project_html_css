@@ -72,12 +72,20 @@
     <li class="button-location">
       <button class="button contacts__button contacts__button-our-location" id="ourLocations">
         Our Locations
+        <svg class="contacts__icon-arrow-right">
+          <use href="./images/sprite.svg#btn-icon"></use>
+        </svg>
       </button>
       <ul class="list myDrop" id="myDropDown">
         <li class="city-maps" id="cityMaps">
           Chicago
           <div class="my-modal" id="myModal">
             <div class="modal-maps">
+              <span class="close" id="closeChicago">
+                <svg class="close__icon">
+                  <use href="./images/sprite.svg#close-icon"></use>
+                </svg>
+              </span>
               <ul class="modal-list list">
                 <li class="modal-list__item">
                   <p class="modal-list__city">Chicago</p>
@@ -167,7 +175,12 @@
       </ul>
     </li>
     <li>
-      <button class="button contacts__button contacts__button-franchise">Franchise</button>
+      <button class="button contacts__button contacts__button-franchise">
+        Franchise
+        <svg class="contacts__icon-arrow-right">
+          <use href="./images/sprite.svg#btn-icon"></use>
+        </svg>
+      </button>
     </li>
   </ul>
 </section>
