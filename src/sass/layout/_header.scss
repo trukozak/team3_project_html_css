@@ -57,11 +57,15 @@
         rgba(225, 225, 225, 0.05) 0px 1px,
         transparent 1px 42px
       );
+
+      &:first-child {
+        border-top: 1px solid rgba(225, 225, 225, 0.01);
+      }
     }
 
     &__link {
       display: inline-block;
-      padding: 21px 20px;
+      padding: 20px 20px;
     }
   }
 
