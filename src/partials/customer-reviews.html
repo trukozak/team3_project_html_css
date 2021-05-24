@@ -1,16 +1,77 @@
 <section class="customer-reviews customer-reviews__section">
   <h2 class="customer-reviews__title visually-hidden">Customer reviews</h2>
-  <div class="container container-wrap">
-    <div class="container-wrap__item">
-      <img class="container-wrap__img" src="./images/reviews/user1.svg" alt="user" />
-      <div class="container-wrap__thumb-reviews">
-        <p class="container-wrap__text-reviews">
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-          nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-        </p>
-      </div>
+  <div class="slider">
+    <div class="slider__thumb">
+      <div class="container container-wrap">
+        <picture>
+          <source
+            srcset="./images/reviews/webp/user1.webp 1x, ./images/reviews/webp/user1@2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 280px)"
+          />
+          <source
+            srcset="./images/reviews/user1.png 1x, ./images/reviews/user1@2x.png 2x"
+            media="(min-width: 280px)"
+          />
+          <img class="container-wrap__img" src="./images/reviews/user1.png" alt="user1" />
+        </picture>
 
-      <p class="container-wrap__text">Emily, Los Angeles</p>
+        <div class="container-wrap__thumb">
+          <p class="container-wrap__text-reviews">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
+        </div>
+        <p class="container-wrap__text">Emily, Los Angeles</p>
+      </div>
+    </div>
+    <div class="slider__thumb">
+      <div class="container container-wrap">
+        <picture>
+          <source
+            srcset="./images/reviews/webp/user2.webp 1x, ./images/reviews/webp/user2@2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 280px)"
+          />
+          <source
+            srcset="./images/reviews/user2.png 1x, ./images/reviews/user2@2x.png 2x"
+            media="(min-width: 280px)"
+          />
+          <img class="container-wrap__img" src="./images/reviews/user2.png" alt="user2" />
+        </picture>
+
+        <div class="container-wrap__thumb">
+          <p class="container-wrap__text-reviews">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
+        </div>
+        <p class="container-wrap__text">Emily, Los Angeles</p>
+      </div>
+    </div>
+    <div class="slider__thumb">
+      <div class="container container-wrap">
+        <picture>
+          <source
+            srcset="./images/reviews/webp/user3.webp 1x, ./images/reviews/webp/user3@2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 280px)"
+          />
+          <source
+            srcset="./images/reviews/user3.png 1x, ./images/reviews/user3@2x.png 2x"
+            media="(min-width: 280px)"
+          />
+          <img class="container-wrap__img" src="./images/reviews/user3.png" alt="user3" />
+        </picture>
+
+        <div class="container-wrap__thumb">
+          <p class="container-wrap__text-reviews">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
+        </div>
+        <p class="container-wrap__text">Emily, Los Angeles</p>
+      </div>
     </div>
   </div>
 </section>

@@ -2,13 +2,10 @@
   &__section {
     padding-top: 120px;
     padding-bottom: 98px;
-    background-color: var(--secondary-background-color);
 
     @media screen and (min-width: 768px) {
       padding-top: 122px;
       padding-bottom: 112px;
-      padding-left: 34px;
-      padding-right: 34px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -16,42 +13,14 @@
     }
   }
 
-  &__subtitle {
-    font-family: Titan One;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    line-height: 1.17;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--title-text-color);
-
-    @media screen and (min-width: 1280px) {
-      font-size: 30px;
-      line-height: 1.13;
-    }
-  }
-
   &__title {
     margin-top: 15px;
     margin-bottom: 30px;
-    font-family: Titan One;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 34px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--accent-color);
     @media screen and (min-width: 768px) {
       margin-bottom: 40px;
     }
     @media screen and (min-width: 1280px) {
       margin-bottom: 50px;
-      font-size: 58px;
-      line-height: 1.14;
-      letter-spacing: 0.06em;
     }
   }
 
@@ -78,17 +47,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 280px;
+    // width: 100%;
+    min-width: 280px;
     height: 598px;
     &:not(:last-child) {
       margin-bottom: 17px;
     }
+    @media screen and (max-width: 767px) {
+      padding-left: 42px;
+      padding-right: 42px;
+    }
 
     @media screen and (min-width: 768px) {
-      width: 220px;
+      min-width: 220px;
       height: 590px;
       margin-top: 20px;
       margin-left: 20px;
+      // max-width: 100%;
       flex-basis: calc((100% / 3) - 20px);
       &:not(:last-child) {
         margin-bottom: 0;
@@ -106,10 +81,9 @@
   &__background {
     position: absolute;
     bottom: 0;
-    width: 280px;
+    width: 100%;
     height: 485px;
     border-radius: 24px;
-
     z-index: 1;
     background-position: bottom center;
     &.pink {
@@ -142,11 +116,9 @@
     }
 
     @media screen and (min-width: 768px) {
-      width: 210px;
       height: 485px;
     }
     @media screen and (min-width: 1280px) {
-      width: 330px;
       height: 525px;
     }
   }
@@ -154,17 +126,16 @@
   &__image {
     position: absolute;
     z-index: 2;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     @media screen and (min-width: 320px) {
-      top: 0;
-      width: 250px;
       height: 252px;
     }
     @media screen and (min-width: 768px) {
-      width: 220px;
       height: 226px;
     }
     @media screen and (min-width: 1280px) {
-      width: 330px;
       height: 330px;
     }
   }
@@ -179,7 +150,6 @@
     line-height: 1.15;
     z-index: 2;
     letter-spacing: 0.04em;
-    // text-shadow: 2px 3px 2px rgb(149, 107, 189);
     text-transform: uppercase;
     text-align: center;
     color: var(--white);
@@ -195,7 +165,7 @@
         text-shadow: none;
       }
       50% {
-        text-shadow: 2px 3px 2px rgb(149, 107, 189);
+        text-shadow: 2px 3px 2px var(--accent-color);
       }
       100% {
         text-shadow: none;
@@ -227,7 +197,8 @@
     letter-spacing: 0.04em;
     text-align: center;
     color: var(--white);
-    width: 195px;
+    width: 100%;
+    // width: 195px;
     text-align: center;
     margin-bottom: 30px;
     @media screen and (min-width: 1280px) {
@@ -236,6 +207,18 @@
       width: 235px;
     }
   }
+
+  &__icon {
+    fill: #d41443;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms linear;
+    .products__button:hover &,
+    .products__button:focus & {
+      fill: var(--white);
+      transform: rotate(90deg);
+    }
+  }
+
   &__button {
     width: 40px;
     height: 40px;
@@ -246,7 +229,9 @@
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms linear;
+    animation: animate125 3000ms infinite 1000ms;
+
     &:hover.button-pink,
     &:focus.button-pink {
       background-color: #f89fb4dc;
@@ -260,13 +245,18 @@
       background-color: #acd17b;
     }
   }
+}
 
-  &__icon {
-    fill: #d41443;
-    transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    .products__button:hover &,
-    .products__button:focus & {
-      fill: var(--white);
-    }
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
