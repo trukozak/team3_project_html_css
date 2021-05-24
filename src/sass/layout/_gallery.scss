@@ -15,10 +15,5 @@
 
 .line-gradient {
   background: 
-  linear-gradient(
-    var(--secondary-background-color) 20%, 
-    var(--white) 70%);  
-  // linear-gradient
-  // (var(--secondary-background-color) 0% 40%, 
-  // var(--white) 40% 100%);
+  linear-gradient(var(--secondary-background-color) 40%, var(--white) 40%);
 }
