@@ -242,6 +242,13 @@
   &__button-our-location {
     margin-bottom: 10px;
   }
+  &__icon-arrow-right {
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 6px;
+    width: 6px;
+    height: 10px;
+  }
   .myDrop {
     display: none;
     width: 100%;
@@ -253,6 +260,7 @@
     border-radius: 24px;
     padding: 14px 20px;
     color: #000000;
+    margin-bottom: 10px;
   }
 
   .my-modal {
@@ -281,8 +289,9 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width: 768px) {
-      max-width: 500px;
+    @media screen and (min-width: 320px) {
+      padding-top: 90px;
+      min-width: 320px;
     }
   }
   .show {
@@ -313,5 +322,23 @@
   .modal-link {
     display: block;
     text-align: center;
+  }
+
+  .close {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    &__icon {
+      position: absolute;
+      right: 20px;
+      width: 16px;
+      height: 14px;
+      stroke: #ffa5ba;
+      transition: stroke 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    // &__icon:hover,
+    // &__icon:focus {
+    //   stroke: #d41443;
+    // }
   }
 }
