@@ -1,4 +1,4 @@
-.advantages {
+.advantages__item {
     @media screen and (min-width: 768px) {
         display: flex;                     
     }
@@ -100,4 +100,8 @@
             margin-bottom: 38px;
         }
     }
+}
+
+.section_title {
+    display: none;
 }
