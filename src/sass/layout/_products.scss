@@ -172,19 +172,33 @@
       }
     }
 
+    // &::after {
+    //   content: '...';
+    //   font-size: 26px;
+    //   position: absolute;
+    //   top: 30px;
+    //   left: 0;
+    //   text-shadow: none;
+    //   width: 100%;
+    //   color: #ffffff;
+    //   color: var(--white);
+    //   @media screen and (min-width: 1280px) {
+    //     top: 46px;
+    //   }
+    // }
+
     &::after {
-      content: '...';
-      font-size: 26px;
+      content: '';
       position: absolute;
-      top: 30px;
+      top: 45px;
+      display: block;
       left: 0;
-      text-shadow: none;
+      z-index: 5;
       width: 100%;
-      color: #ffffff;
-      color: var(--white);
-      @media screen and (min-width: 1280px) {
-        top: 46px;
-      }
+      height: 100%;
+      background-image: url(../images/products/three-dots.png);
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 
