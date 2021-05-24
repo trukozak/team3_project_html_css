@@ -14,7 +14,7 @@
   &__content-container {
     width: calc(100% - 40px);
     position: absolute;
-    z-index: 3;
+    z-index: 6;
   }
 
   &__container-first {
@@ -30,7 +30,7 @@
     display: inline-block;
     margin-bottom: 25px;
 
-    font-family: Titan One;
+    font-family: Titan One, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -128,12 +128,12 @@
 
     &__number {
       color: var(--accent-color);
-      font-family: Titan One;
+      font-family: Titan One, sans-serif;
       font-style: normal;
       font-size: 28px;
       line-height: 1.14;
       text-transform: uppercase;
-      z-index: 4;
+      z-index: 7;
     }
 
     &__cafes {
