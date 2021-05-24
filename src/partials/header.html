@@ -23,15 +23,125 @@
             <use href="./images/sprite.svg#burger-icon"></use>
           </svg>
         </button>
+
+        <!-- ORDER -->
         <button
           class="button button--light-theme menu__buy-now site-nav__button--hidden"
           type="button"
+          data-order-open
         >
           Buy now
           <svg class="button__arrow site-nav__button-arrow">
             <use href="./images/sprite.svg#btn-icon"></use>
           </svg>
         </button>
+        <div class="backdrop is-hidden" data-order>
+          <div class="order">
+            <!-- ORDER CLOSE-BUTTON -->
+            <button class="menu__close-button order__close-button" type="button" data-order-close>
+              <svg class="menu__close-icon order__close-icon">
+                <use href="./images/sprite.svg#close-icon"></use>
+              </svg>
+            </button>
+
+            <!-- OREDER FORM -->
+            <form class="order-form" action="#" autocomplete="off">
+              <div class="order-form__container order-form--left">
+                <p class="order-form__title order-form__title--dark">Make order</p>
+                <ul class="order-list">
+                  <!-- ITEM-1 -->
+                  <li class="order-list__item">
+                    <div class="order-list__quantity-container">
+                      <img
+                        src="./images/products/mobile/products-1.png"
+                        class="order-list__image"
+                        alt=""
+                      />
+                      <div class="order-list__input-container">
+                        <input class="order-list__quantity" type="text" />
+                      </div>
+                    </div>
+                    <div class="order-list__name-container">
+                      <span class="order-list__name">Ice coffee</span>
+                    </div>
+                    <div class="order-list__button-container">
+                      <button class="order-list__button" type="button">+</button>
+                      <button class="order-list__button" type="button">-</button>
+                    </div>
+                  </li>
+
+                  <!-- ITEM-2 -->
+                  <li class="order-list__item">
+                    <div class="order-list__quantity-container">
+                      <img
+                        src="./images/products/mobile/products-2.png"
+                        alt=""
+                        class="order-list__image"
+                      />
+                      <div class="order-list__input-container">
+                        <input class="order-list__quantity" type="text" />
+                      </div>
+                    </div>
+                    <div class="order-list__name-container">
+                      <span class="order-list__name">Milk shake</span>
+                    </div>
+                    <div class="order-list__button-container">
+                      <button class="order-list__button" type="button">+</button>
+                      <button class="order-list__button" type="button">-</button>
+                    </div>
+                  </li>
+
+                  <!-- ITEM-3 -->
+                  <li class="order-list__item">
+                    <div class="order-list__quantity-container">
+                      <img
+                        src="./images/products/mobile/products-3.png"
+                        alt=""
+                        class="order-list__image"
+                      />
+                      <div class="order-list__input-container">
+                        <input class="order-list__quantity" type="text" />
+                      </div>
+                    </div>
+                    <div class="order-list__name-container">
+                      <span class="order-list__name">Ice cream</span>
+                    </div>
+                    <div class="order-list__button-container">
+                      <button class="order-list__button" type="button">+</button>
+                      <button class="order-list__button" type="button">-</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="order-form__container">
+                <p class="order-form__title order-form__title--light">Details</p>
+
+                <!-- INPUT -->
+                <div role="group" aria-label="User data field">
+                  <label class="form-field"
+                    >Your name
+                    <span class="form-field__container">
+                      <input type="text" class="form-field__input" />
+                      <svg class="form-field__icon">
+                        <use href="./images/sprite.svg#close-icon" width="15" height="15"></use>
+                      </svg>
+                    </span>
+                  </label>
+                  <label class="form-field"
+                    >Your address
+                    <span class="form-field__container">
+                      <input type="text" class="form-field__input" />
+                      <svg class="form-field__icon">
+                        <use href="./images/sprite.svg#close-icon" width="15" height="15"></use>
+                      </svg>
+                    </span>
+                  </label>
+                  <button class="form-field__button" type="submit">Check out</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
       <div class="backdrop is-hidden backdrop--hidden" data-menu>
         <div class="menu">
