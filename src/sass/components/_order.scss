@@ -18,6 +18,12 @@
 
   @media screen and (max-width: 767px) {
     max-width: 320px;
+    border-radius: 8px;
+
+    &__close-button {
+      top: 10px;
+      right: 10px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -152,6 +158,14 @@
   @media screen and (max-width: 767px) {
     &__name {
       color: var(--accent-color);
+    }
+
+    &__button {
+      border: 1px solid var(--products-color-pink);
+    }
+
+    &__button--first {
+      border: none;
     }
   }
 }
