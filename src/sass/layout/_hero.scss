@@ -61,6 +61,8 @@
 
     border-radius: 30px;
 
+    cursor: pointer;
+
     & + & {
       margin-left: 8px;
     }
@@ -178,6 +180,7 @@
       border-radius: 50%;
       border: none;
       background-color: var(--white);
+      cursor: pointer;
 
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
