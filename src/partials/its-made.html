@@ -2,6 +2,11 @@
   <div class="container">
     <p class="subtitle">tradition and love</p>
     <h2 class="title title-padding">how it’s made?</h2>
+    <a href="#home" class="arrow-up">
+      <svg class="arrow-up-icon">
+        <use href="./images/sprite.svg#arrow-up"></use>
+      </svg>
+    </a>
     <div class="its-made__box">
       <picture>
         <source
@@ -70,7 +75,16 @@
         </p>
         <p class="its-made__text2">Aliquam erat volutpat. Aenean accumsan.</p>
         <div class="btn__box">
-          <a href="" class="its-made__link btn">Read more</a>
+          <button type="button" class="its-made__link btn" data-full-descrip-open>Read more</button>
+        </div>
+        <div class=" is-hidden" data-full-descrip>
+          <div class="modal">
+            <button class="" type="button" data-full-descrip-close>
+              <svg class="">
+                <use href="./images/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>
