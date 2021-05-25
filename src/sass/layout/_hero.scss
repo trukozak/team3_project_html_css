@@ -112,20 +112,21 @@
       margin-right: 8px;
       text-align: right;
 
+      &::after {
+        content: '';
+        position: absolute;
+        top: -4px;
+        right: -8px;
+        width: 16px;
+        height: 16px;
+        background-color: var(--white);
+        border-radius: 50%;
+        text-align: right;
+      }
+
       & + & {
         margin-top: 13px;
       }
-    }
-
-    &__ad-circle {
-      position: absolute;
-      top: -4px;
-      right: -8px;
-      width: 16px;
-      height: 16px;
-      background-color: var(--white);
-      border-radius: 50%;
-      text-align: right;
     }
 
     &__number {
@@ -152,6 +153,29 @@
 
     &__milk-describe {
       display: flex;
+    }
+
+    &__milk-container {
+      width: 124px;
+      height: 126px;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../images/hero-header/hero-milk-tablet.png');
+      }
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+      (min-resolution: 192dpi) and (min-width: 768px),
+      (min-resolution: 2dppx) and (min-width: 768px) {
+      &__milk-container::after {
+        background-image: url('../images/hero-header/hero-milk-tablet@2x.png');
+      }
     }
 
     &__describe-container {
@@ -207,12 +231,25 @@
     &__girl-container {
       width: 168px;
       position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/hero-header/hero-girl-tablet.png');
+      }
     }
 
-    &__girl {
-      position: absolute;
-      bottom: -10px;
-    }
+    // @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    //   (min-resolution: 192dpi) and (min-width: 768px),
+    //   (min-resolution: 2dppx) and (min-width: 768px) {
+    //   &__girl-container::after {
+    //     background-image: url('../images/hero-header/hero-girl-tablet@2x.png');
+    //   }
+    // }
 
     &__ice-cream-container {
       top: -52px;
@@ -281,17 +318,18 @@
     &__ad-container {
       margin-right: 16px;
 
+      &::after {
+        content: '';
+        position: absolute;
+        top: -5px;
+        right: -17px;
+        width: 30px;
+        height: 30px;
+      }
+
       & + & {
         margin-top: 15px;
       }
-    }
-
-    &__ad-circle {
-      position: absolute;
-      top: -5px;
-      right: -17px;
-      width: 30px;
-      height: 30px;
     }
 
     &__number {
@@ -302,6 +340,25 @@
     &__cafes {
       font-size: 14px;
       line-height: 1.3;
+    }
+
+    &__milk-container {
+      width: 188px;
+      height: 191px;
+
+      &::after {
+        content: '';
+        display: block;
+        background-image: url('../images/hero-header/hero-milk-desktop.png');
+      }
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+      (min-resolution: 192dpi) and (min-width: 1280px),
+      (min-resolution: 2dppx) and (min-width: 1280px) {
+      &__milk-container::after {
+        background-image: url('../images/hero-header/hero-milk-desktop@2x.png');
+      }
     }
 
     &__describe-container {
@@ -327,13 +384,28 @@
 
     &__girl-container {
       width: 294px;
+      height: 236px;
       position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -26px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/hero-header/hero-girl-desktop.png');
+        background-repeat: no-repeat;
+      }
     }
 
-    &__girl {
-      position: absolute;
-      bottom: -67px;
-    }
+    // @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    //   (min-resolution: 192dpi) and (min-width: 1280px),
+    //   (min-resolution: 2dppx) and (min-width: 1280px) {
+    //   &__girl-container::after {
+    //     background-image: url('../images/hero-header/hero-girl-desktop@2x.png');
+    //   }
+    // }
 
     &__ice-cream-container {
       top: -118px;

@@ -82,3 +82,18 @@ window.onclick = function (event) {
     myModalll.style.display = 'none';
   }
 }
+const buttonClose = document.getElementById('buttonClose')
+buttonClose.onclick = function (event) {
+  event.stopPropagation();
+  myModal.style.display = 'none';
+};
+const buttonCloseNew = document.getElementById('buttonCloseNew')
+buttonCloseNew.onclick = function (event) {
+  event.stopPropagation();
+  myModall.style.display = 'none';
+};
+const buttonCloseLos = document.getElementById('buttonCloseLos')
+buttonCloseLos.onclick = function (event) {
+  event.stopPropagation();
+  myModalll.style.display = 'none';
+};

@@ -17,7 +17,14 @@
   }
 
   @media screen and (max-width: 767px) {
-    max-width: 320px;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 8px;
+
+    &__close-button {
+      top: 10px;
+      right: 10px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -153,6 +160,14 @@
     &__name {
       color: var(--accent-color);
     }
+
+    &__button {
+      border: 1px solid var(--products-color-pink);
+    }
+
+    &__button--first {
+      border: none;
+    }
   }
 }
 
@@ -186,7 +201,7 @@
 
   &__icon {
     position: absolute;
-    top: 2px;
+    top: 4px;
     left: 10px;
     fill: var(--accent-color);
   }
@@ -201,6 +216,16 @@
     height: 36px;
     border-radius: 18px;
   }
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+
+    &__icon {
+      display: none;
+    }
+  }
+
   @media screen and (min-width: 1280px) {
     &__wrapper {
       text-align: right;

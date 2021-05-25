@@ -1,0 +1,259 @@
+.backdropp {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    pointer-events 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.backdropp.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdropp.is-hidden .modall {
+  transform: translate(-50%, -50%);
+}
+
+.modall {
+  position: relative;
+  height: 100vh;
+  overflow: scroll;
+  padding: 40px;
+  background-color: var(--white);
+
+  animation-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button-close__icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .button-close:hover &,
+  .button-close:focus & {
+    fill: currentColor;
+  }
+}
+.modall__title {
+  display: flex;
+  align-self: center;
+  text-align: center;
+
+  margin-bottom: 12px;
+  font-size: 18px;
+  // line-height: 1.15;
+  // text-align: center;
+  color: black;
+}
+
+.form-fild {
+  position: relative;
+}
+
+.form-fild__input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 11px 0px 11px 42px;
+  width: 100%;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  &:focus {
+    border: 1px solid black;
+  }
+}
+
+.form-fild__label {
+  margin-bottom: 6px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: black;
+}
+
+.form-fild__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-25%);
+
+  display: inline-block;
+  fill: black;
+
+  .form-fild__input:focus ~ & {
+    fill: black;
+  }
+}
+
+/* ------------------------------ TEXTAREA ------------------------------ */
+
+.form-fild__textarea {
+  margin-top: 10px;
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  width: 100%;
+
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: black;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: black;
+
+  &:focus {
+    border: 1px solid black;
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+/* ----------------------------- FORM POLICY ----------------------------- */
+
+.policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.policy__label {
+  display: block;
+
+  font-size: 12px;
+  line-height: 1.16;
+
+  color: black;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.policy-link {
+  font-size: 12px;
+  line-height: 1.16;
+
+  text-decoration-line: underline;
+
+  color: black;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.policy__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 1px solid black;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.policy__checkbox:checked + .policy__icon {
+  fill: blue;
+  border-radius: 2px;
+  background-color: black;
+  background-image: url('../images/contacts/check.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+}
+
+.policy__checkbox:focus + .policy__icon {
+  border: 1px solid black;
+}
+
+.policy__icon {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid black;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+}
+
+.send-button {
+  display: block;
+  padding: 10px 55px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: white;
+
+  background-color: red;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  &:hover,
+  &:focus {
+    color: white;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

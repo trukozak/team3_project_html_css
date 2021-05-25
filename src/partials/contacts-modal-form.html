@@ -1,0 +1,66 @@
+<div class="backdropp is-hidden" data-modal>
+  <div class="modall">
+    <button class="button-close" data-modal-close>
+      <svg class="button-close__icon" width="18" height="18">
+        <use href="./images/sprite.svg#close-icon"></use>
+      </svg>
+    </button>
+    <b class="modall__title">Оставьте свои данные, мы вам перезвоним</b>
+    <form class="modal-form">
+      <div class="form-fild">
+        <label class="form-fild__label" for="name">Имя</label>
+        <input
+          class="form-fild__input"
+          type="text"
+          name="name"
+          id="name"
+          autofocus
+          placeholder=""
+        />
+        <svg class="form-fild__icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-person"></use>
+        </svg>
+      </div>
+
+      <div class="form-fild">
+        <label class="form-fild__label" for="tel">Телефон</label>
+        <input class="form-fild__input" type="tel" name="tel" id="tel" />
+        <svg class="form-fild__icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-handset"></use>
+        </svg>
+      </div>
+
+      <div class="form-fild">
+        <label class="form-fild__label" for="mail">Почта</label>
+        <input class="form-fild__input" type="email" name="mail" id="mail" />
+        <svg class="form-fild__icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-modal-envelope"></use>
+        </svg>
+      </div>
+
+      <div class="form-fild">
+        <label class="form-fild__label" for="comment">Комментарий</label>
+        <textarea
+          class="form-fild__textarea"
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="Введите текст"
+        ></textarea>
+      </div>
+
+      <div class="policy">
+        <label class="policy__label" for="policy">
+          <input class="policy__checkbox" type="checkbox" name="policy" id="policy" />
+          <svg class="policy__icon" width="16" height="15">
+            <use href="./images/sprite.svg#icon-check-border"></use>
+          </svg>
+          Соглашаюсь с рассылкой и принимаю&nbsp;<a class="policy-link" href="">Условия договора</a>
+        </label>
+      </div>
+
+      <button class="send-button" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
