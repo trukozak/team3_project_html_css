@@ -224,16 +224,22 @@
             </svg>
           </button>
           <div class="menu__button-container">
-            <button class="button button--light-theme menu__buy-now" type="button" data-order-open>
+
+            <!-- MENU-ORDER -->
+            <button
+              class="button button--light-theme menu__buy-now"
+              type="button"
+              data-menu-order-open
+            >
               Buy now
               <svg class="button__arrow menu__batton-arrow">
                 <use href="./images/sprite.svg#btn-icon"></use>
               </svg>
             </button>
-            <div class="backdrop is-hidden" data-order>
+            <div class="backdrop is-hidden" data-menu-order>
               <div class="order">
                 <!-- ORDER CLOSE-BUTTON -->
-                <button class="order__close-button" type="button" data-order-close>
+                <button class="order__close-button" type="button" data-menu-order-close>
                   <svg class="order__close-icon" width="14" height="14">
                     <use href="./images/sprite.svg#close-icon"></use>
                   </svg>
