@@ -82,3 +82,6 @@ window.onclick = function (event) {
     myModalll.style.display = 'none';
   }
 }
+  function closeWindow() {
+  document.getElementById('myDropDown').style.display = 'none';
+}
