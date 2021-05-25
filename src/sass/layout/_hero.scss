@@ -12,8 +12,8 @@
   }
 
   &__content-container {
-    width: calc(100% - 40px);
-    position: absolute;
+    width: calc(100% - 20px);
+    position: relative;
     z-index: 6;
   }
 
@@ -57,7 +57,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
-    line-height: 1.3px;
+    line-height: 1.3;
 
     border-radius: 30px;
 
@@ -211,12 +211,12 @@
 
     &__girl {
       position: absolute;
-      bottom: -19px;
+      bottom: -10px;
     }
 
     &__ice-cream-container {
       top: -52px;
-      right: 114px;
+      right: 124px;
     }
 
     &__ice-cream-background {
@@ -238,7 +238,7 @@
 
   @media screen and (min-width: 1280px) {
     height: 665px;
-    padding-bottom: 170px;
+    padding-top: 170px;
 
     &__container-first {
       margin-bottom: 8px;
@@ -332,12 +332,12 @@
 
     &__girl {
       position: absolute;
-      bottom: -45px;
+      bottom: -67px;
     }
 
     &__ice-cream-container {
-      top: -140px;
-      right: 162px;
+      top: -118px;
+      right: 172px;
     }
 
     &__ice-cream-background {
