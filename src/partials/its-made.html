@@ -2,6 +2,11 @@
   <div class="container">
     <p class="subtitle">tradition and love</p>
     <h2 class="title title-padding">how it’s made?</h2>
+    <a href="#home" class="arrow-up">
+      <svg class="arrow-up-icon">
+        <use href="./images/sprite.svg#arrow-up"></use>
+      </svg>
+    </a>
     <div class="its-made__box">
       <picture>
         <source
@@ -70,7 +75,34 @@
         </p>
         <p class="its-made__text2">Aliquam erat volutpat. Aenean accumsan.</p>
         <div class="btn__box">
-          <a href="" class="its-made__link btn">Read more</a>
+          <button type="button" class="its-made__link btn" data-full-descrip-open>Read more</button>
+        </div>
+        <div class="modal is-hidden" data-full-descrip>
+          <div class="full-descrip">
+            <button class="full-descrip__close-button" type="button" data-full-descrip-close>
+              <svg class="full-descrip__close-icon">
+                <use href="./images/sprite.svg#close-icon"></use>
+              </svg>
+            </button>
+            <ul class="full-descript-item">
+              <li class="full-descript-list">
+                <p class="full-descript__subtitle">first subtitle</p>
+                <h3 class="full-descript__title">first product description</h3>
+                <div class="full-descript-box">
+                  <img class="full-descript-img" src="./images/its_made/full-desc-ice-cream.png" alt="ice-cream">
+                  <p class="full-descript-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam pariatur vitae et itaque corrupti in eos voluptatum dicta cupiditate quos, laboriosam obcaecati, a reiciendis, similique rem minus dolorem distinctio explicabo perspiciatis consequuntur perferendis ad sapiente? Sint dolorem ipsam doloremque nisi nulla quisquam ratione! Dignissimos nisi aliquid quam tenetur quia laudantium!</p>
+                </div>
+              </li>
+              <li class="full-descript-list">
+                <p class="full-descript__subtitle">first subtitle</p>
+                <h3 class="full-descript__title">first product description</h3>
+                <div class="full-descript-box">
+                  <img class="full-descript-img" src="./images/its_made/full-desc-ice-cream.png" alt="ice-cream">
+                  <p class="full-descript-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam pariatur vitae et itaque corrupti in eos voluptatum dicta cupiditate quos, laboriosam obcaecati, a reiciendis, similique rem minus dolorem distinctio explicabo perspiciatis consequuntur perferendis ad sapiente? Sint dolorem ipsam doloremque nisi nulla quisquam ratione! Dignissimos nisi aliquid quam tenetur quia laudantium!</p>
+                </div>
+              </li>
+           </ul>
+          </div>
         </div>
       </div>
     </div>
