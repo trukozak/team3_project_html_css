@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="home">
   <div class="container header__container">
     <nav class="site-nav site-nav--padding">
       <a href="" class="logo link">
@@ -6,16 +6,16 @@
       </a>
       <ul class="site-nav__list site-nav__list--hidden list">
         <li class="site-nav__item">
-          <a class="link site-nav__link site-nav__link--current" href="">Home</a>
+          <a class="link site-nav__link site-nav__link--current anchor" href="#home">Home</a>
         </li>
-        <li class="site-nav__item"><a class="link site-nav__link" href="#about-us">About us</a></li>
+        <li class="site-nav__item"><a class="link site-nav__link anchor" href="#about-us">About us</a></li>
         <li class="site-nav__item">
-          <a class="link site-nav__link" href="#how-its-made">How it’s made?</a>
+          <a class="link site-nav__link anchor" href="#how-its-made">How it’s made?</a>
         </li>
         <li class="site-nav__item">
-          <a class="link site-nav__link" href="#our-products">Our products</a>
+          <a class="link site-nav__link anchor" href="#our-products">Our products</a>
         </li>
-        <li class="site-nav__item"><a class="link site-nav__link" href="#contacts">Contacts</a></li>
+        <li class="site-nav__item"><a class="link site-nav__link anchor" href="#contacts">Contacts</a></li>
       </ul>
       <div class="open-menu">
         <button class="open-menu__button" type="button" data-menu-open>
@@ -224,16 +224,22 @@
             </svg>
           </button>
           <div class="menu__button-container">
-            <button class="button button--light-theme menu__buy-now" type="button" data-order-open>
+
+            <!-- MENU-ORDER -->
+            <button
+              class="button button--light-theme menu__buy-now"
+              type="button"
+              data-menu-order-open
+            >
               Buy now
               <svg class="button__arrow menu__batton-arrow">
                 <use href="./images/sprite.svg#btn-icon"></use>
               </svg>
             </button>
-            <div class="backdrop is-hidden" data-order>
+            <div class="backdrop is-hidden" data-menu-order>
               <div class="order">
                 <!-- ORDER CLOSE-BUTTON -->
-                <button class="order__close-button" type="button" data-order-close>
+                <button class="order__close-button" type="button" data-menu-order-close>
                   <svg class="order__close-icon" width="14" height="14">
                     <use href="./images/sprite.svg#close-icon"></use>
                   </svg>
@@ -413,19 +419,19 @@
           <nav class="site-nav site-nav__mobile site-nav--display">
             <ul class="site-nav__list list">
               <li class="site-nav__item">
-                <a class="link site-nav__link" href="">Home</a>
+                <a class="link site-nav__link anchor" href="#home">Home</a>
               </li>
               <li class="site-nav__item">
-                <a class="link site-nav__link" href="#about-us">About us</a>
+                <a class="link site-nav__link anchor" href="#about-us">About us</a>
               </li>
               <li class="site-nav__item">
-                <a class="link site-nav__link" href="#how-its-made">How it’s made?</a>
+                <a class="link site-nav__link anchor" href="#how-its-made">How it’s made?</a>
               </li>
               <li class="site-nav__item">
-                <a class="link site-nav__link" href="#our-products">Our products</a>
+                <a class="link site-nav__link anchor" href="#our-products">Our products</a>
               </li>
               <li class="site-nav__item">
-                <a class="link site-nav__link" href="#contacts">Contacts</a>
+                <a class="link site-nav__link anchor" href="#contacts">Contacts</a>
               </li>
             </ul>
           </nav>
