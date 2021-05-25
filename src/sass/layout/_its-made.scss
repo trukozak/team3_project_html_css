@@ -34,12 +34,17 @@
 }
 
 .its-made__sub-box {  
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 480px) {
        width: 220px;
        margin-left: auto;
-       margin-right: auto;
-        
+       margin-right: auto;        
     }
+
+    @media screen and (max-width: 767px) {
+        min-width: 220px;
+        margin-left: auto;
+        margin-right: auto;        
+     }
 
     @media screen and (min-width: 768px) {
         padding-top: 50px;
@@ -55,6 +60,8 @@
 
 .its-made__box-img{    
     max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 768px) {
         max-width: 340px;
@@ -106,11 +113,7 @@
 .its-made__box {    
     @media screen and (min-width: 768px) {
         display: flex;
-    }
-    
-    @media screen and (min-width: 1280px) {
-        // margin-left: 85px;
-    }
+    }   
 }
 
 .title-padding {
