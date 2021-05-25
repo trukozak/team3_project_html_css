@@ -201,4 +201,9 @@
     height: 36px;
     border-radius: 18px;
   }
+  @media screen and (min-width: 1280px) {
+    &__wrapper {
+      text-align: right;
+    }
+  }
 }
