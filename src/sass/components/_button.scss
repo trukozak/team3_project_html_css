@@ -88,8 +88,8 @@
 .arrow-up {
   position: fixed;
   z-index: 1;
-  top: 10%;
-  right: 10%;
+  bottom: 10%;
+  right: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,18 +98,12 @@
   background: var(--accent-color);
   border-radius: 50%;
 
-  @media screen and (min-width: 480px) {
-    top: 25%;
-    right: 3%;
-  }
-
   @media screen and (min-width: 768px) {      
     right: 1%;      
   }
   
   @media screen and (min-width: 1280px) {      
-    right: 7%;
-    top: 22%;      
+    right: 7%;          
   }
 
   &:hover, 
