@@ -1,6 +1,5 @@
 .order {
   position: absolute;
-  overflow-y: scroll;
 
   &__close-button {
     position: absolute;
@@ -21,6 +20,7 @@
     width: 100vw;
     height: 100vh;
     border-radius: 8px;
+    overflow-y: scroll;
 
     &__close-button {
       top: 10px;
