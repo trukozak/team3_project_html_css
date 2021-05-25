@@ -164,17 +164,19 @@
         display: block;
         width: 100%;
         height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
         background-image: url('../images/hero-header/hero-milk-tablet.png');
       }
     }
 
-    // @media (min-device-pixel-ratio: 2) and (min-width: 768px),
-    //   (min-resolution: 192dpi) and (min-width: 768px),
-    //   (min-resolution: 2dppx) and (min-width: 768px) {
-    //   &__milk-container::after {
-    //     background-image: url('../images/hero-header/hero-milk-tablet@2x.png');
-    //   }
-    // }
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+      (min-resolution: 192dpi) and (min-width: 768px),
+      (min-resolution: 2dppx) and (min-width: 768px) {
+      &__milk-container::after {
+        background-image: url('../images/hero-header/hero-milk-tablet@2x.png');
+      }
+    }
 
     &__describe-container {
       display: flex;
@@ -238,9 +240,16 @@
         width: 100%;
         height: 100%;
         background-image: url('../images/hero-header/hero-girl-tablet.png');
-        background-repeat: no-repeat;
       }
     }
+
+    // @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    //   (min-resolution: 192dpi) and (min-width: 768px),
+    //   (min-resolution: 2dppx) and (min-width: 768px) {
+    //   &__girl-container::after {
+    //     background-image: url('../images/hero-header/hero-girl-tablet@2x.png');
+    //   }
+    // }
 
     &__ice-cream-container {
       top: -52px;
@@ -344,13 +353,13 @@
       }
     }
 
-    // @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
-    //   (min-resolution: 192dpi) and (min-width: 1280px),
-    //   (min-resolution: 2dppx) and (min-width: 1280px) {
-    //   &__milk-container::after {
-    //     background-image: url('../images/hero-header/hero-milk-desktop@2x.png');
-    //   }
-    // }
+    @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+      (min-resolution: 192dpi) and (min-width: 1280px),
+      (min-resolution: 2dppx) and (min-width: 1280px) {
+      &__milk-container::after {
+        background-image: url('../images/hero-header/hero-milk-desktop@2x.png');
+      }
+    }
 
     &__describe-container {
       width: 200px;
@@ -389,6 +398,14 @@
         background-repeat: no-repeat;
       }
     }
+
+    // @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    //   (min-resolution: 192dpi) and (min-width: 1280px),
+    //   (min-resolution: 2dppx) and (min-width: 1280px) {
+    //   &__girl-container::after {
+    //     background-image: url('../images/hero-header/hero-girl-desktop@2x.png');
+    //   }
+    // }
 
     &__ice-cream-container {
       top: -118px;
