@@ -1,11 +1,11 @@
 .social-list {
   display: flex;
+  margin-bottom: 46px;
   &__link {
     cursor: pointer;
   }
   &__items {
     display: flex;
-    margin-bottom: 46px;
   }
   &__items:not(:last-child) {
     margin-right: 28px;
