@@ -38,8 +38,8 @@
         <div class="backdrop" data-order>
           <div class="order">
             <!-- ORDER CLOSE-BUTTON -->
-            <button class="menu__close-button order__close-button" type="button" data-order-close>
-              <svg class="menu__close-icon order__close-icon">
+            <button class="order__close-button" type="button" data-order-close>
+              <svg class="order__close-icon" width="14" height="14">
                 <use href="./images/sprite.svg#close-icon"></use>
               </svg>
             </button>
@@ -47,7 +47,11 @@
             <!-- OREDER FORM -->
             <form class="order-form" action="#" autocomplete="off">
               <div class="order-form__container order-form--left">
-                <p class="order-form__title order-form__title--dark">Make order</p>
+                <p
+                  class="order-form__title order-form__title--dark animate__animated animate__rubberBand"
+                >
+                  Make order
+                </p>
                 <ul class="order-list">
                   <!-- ITEM-1 -->
                   <li class="order-list__item">
@@ -58,19 +62,31 @@
                         alt=""
                       />
                       <div class="order-list__input-container">
-                        <input class="order-list__quantity" type="text" />
+                        <input class="order-list__quantity" type="text" id="product-1" />
                       </div>
                     </div>
                     <div class="order-list__name-container">
-                      <span class="order-list__name">Ice coffee</span>
+                      <span class="order-list__name">Ice cream</span>
                     </div>
                     <div class="order-list__button-container">
-                      <button class="order-list__button" type="button">
-                        <svg class="order-list__icon" width="10" height="10">
+                      <button
+                        class="order-list__button order-list__button--first button--dark-theme"
+                        type="button"
+                        data-increment="product-1"
+                      >
+                        <svg
+                          class="order-list__icon order-list__icon--first"
+                          width="10"
+                          height="10"
+                        >
                           <use href="./images/sprite.svg#plus"></use>
                         </svg>
                       </button>
-                      <button class="order-list__button" type="button">
+                      <button
+                        class="order-list__button button--light-theme"
+                        type="button"
+                        data-decrement="product-1"
+                      >
                         <svg class="order-list__icon" width="10" height="10">
                           <use href="./images/sprite.svg#minus"></use>
                         </svg>
@@ -87,19 +103,31 @@
                         class="order-list__image"
                       />
                       <div class="order-list__input-container">
-                        <input class="order-list__quantity" type="text" />
+                        <input class="order-list__quantity" type="text" id="product-2" />
                       </div>
                     </div>
                     <div class="order-list__name-container">
-                      <span class="order-list__name">Milk shake</span>
+                      <span class="order-list__name">Ice coffee</span>
                     </div>
                     <div class="order-list__button-container">
-                      <button class="order-list__button" type="button">
-                        <svg class="order-list__icon" width="10" height="10">
+                      <button
+                        class="order-list__button order-list__button--first button--dark-theme"
+                        type="button"
+                        data-increment="product-2"
+                      >
+                        <svg
+                          class="order-list__icon order-list__icon--first"
+                          width="10"
+                          height="10"
+                        >
                           <use href="./images/sprite.svg#plus"></use>
                         </svg>
                       </button>
-                      <button class="order-list__button" type="button">
+                      <button
+                        class="order-list__button button--light-theme"
+                        type="button"
+                        data-decrement="product-2"
+                      >
                         <svg class="order-list__icon" width="10" height="10">
                           <use href="./images/sprite.svg#minus"></use>
                         </svg>
@@ -116,19 +144,31 @@
                         class="order-list__image"
                       />
                       <div class="order-list__input-container">
-                        <input class="order-list__quantity" type="text" />
+                        <input class="order-list__quantity" type="text" id="product-3" />
                       </div>
                     </div>
                     <div class="order-list__name-container">
-                      <span class="order-list__name">Ice cream</span>
+                      <span class="order-list__name">Milkshake</span>
                     </div>
                     <div class="order-list__button-container">
-                      <button class="order-list__button" type="button">
-                        <svg class="order-list__icon" width="10" height="10">
+                      <button
+                        class="order-list__button order-list__button--first button--dark-theme"
+                        type="button"
+                        data-increment="product-3"
+                      >
+                        <svg
+                          class="order-list__icon order-list__icon--first"
+                          width="10"
+                          height="10"
+                        >
                           <use href="./images/sprite.svg#plus"></use>
                         </svg>
                       </button>
-                      <button class="order-list__button" type="button">
+                      <button
+                        class="order-list__button button--light-theme"
+                        type="button"
+                        data-decrement="product-3"
+                      >
                         <svg class="order-list__icon" width="10" height="10">
                           <use href="./images/sprite.svg#minus"></use>
                         </svg>
@@ -137,17 +177,21 @@
                   </li>
                 </ul>
               </div>
-              <!-- <div class="order-form__container">
-                <p class="order-form__title order-form__title--light">Details</p> -->
+              <div class="order-form__container">
+                <p
+                  class="order-form__title order-form__title--light animate__animated animate__rubberBand"
+                >
+                  Details
+                </p>
 
-              <!-- INPUT -->
-              <!-- <div role="group" aria-label="User data field">
+                <!-- INPUT -->
+                <div role="group" aria-label="User data field">
                   <label class="form-field"
                     >Your name
                     <span class="form-field__container">
                       <input type="text" class="form-field__input" />
-                      <svg class="form-field__icon">
-                        <use href="./images/sprite.svg#close-icon" width="15" height="15"></use>
+                      <svg class="form-field__icon" width="15" height="15">
+                        <use href="./images/sprite.svg#user"></use>
                       </svg>
                     </span>
                   </label>
@@ -155,14 +199,18 @@
                     >Your address
                     <span class="form-field__container">
                       <input type="text" class="form-field__input" />
-                      <svg class="form-field__icon">
-                        <use href="./images/sprite.svg#close-icon" width="15" height="15"></use>
+                      <svg class="form-field__icon" width="15" height="15">
+                        <use href="./images/sprite.svg#home"></use>
                       </svg>
                     </span>
                   </label>
-                  <button class="form-field__button" type="submit">Check out</button>
+                  <div class="form-field__button-container">
+                    <button class="form-field__button button button--dark-theme" type="submit">
+                      Check out
+                    </button>
+                  </div>
                 </div>
-              </div> -->
+              </div>
             </form>
           </div>
         </div>
